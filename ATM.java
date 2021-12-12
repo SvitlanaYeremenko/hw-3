@@ -9,7 +9,7 @@ public class ATM {
         {
            if(sum >= noteValues[i]) {
                 value = sum / noteValues[i];
-                System.out.println("No of " + noteValues[i] + "'s" + " :" + value);
+                //System.out.println("No of " + noteValues[i] + "'s" + " :" + value);
                 sum = sum % noteValues[i];
                 if (value >= 0) {
                     result += value;
@@ -18,10 +18,5 @@ public class ATM {
            i++;
         }
         return result;
-    }
-    
-    public static void main(String[] args) {
-        ATM atm = new ATM();
-        System.out.println(atm.countBanknotes(5820));
     }
 }
